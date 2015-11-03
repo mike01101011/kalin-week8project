@@ -1,0 +1,56 @@
+/*
+* Theme Name: Mike Kalin Portfolio Theme
+* Theme URI: http://mikekalin.ca;
+* Description: Theme for building a portfolio website. Created by Mike Kalin.
+* Version: 1.0
+* Author: Mike Kalin
+* Author URI: http://mikekalin.ca
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+/*
+====================================
+Additional Styling
+====================================
+*/
+
+
+
+
+
+
