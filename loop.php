@@ -1,5 +1,3 @@
-<!-- loop.php -->
-
 <?php // If there are no posts to display, such as an empty archive page ?>
 
 <?php if ( ! have_posts() ) : ?>

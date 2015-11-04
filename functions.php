@@ -1,5 +1,3 @@
-<!-- functions.php -->
-
 <?php
 
 /* Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */

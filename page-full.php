@@ -1,5 +1,3 @@
-<!-- page-full.php -->
-
 <?php /* Template Name: Full Page, No Sidebar */ get_header();  ?>
 
 <div class="main">
