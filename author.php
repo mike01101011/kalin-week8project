@@ -1,10 +1,12 @@
+<!-- author.php -->
+
 <?php get_header(); ?>
 
 <div class="main">
   <div class="container">
     <div class="content">
       <?php
-      	/* Queue the first post, that way we know who
+        /* Queue the first post, that way we know who
       	 * the author is when we try to get their name,
       	 * URL, description, avatar, etc.
       	 */

@@ -1,15 +1,18 @@
+<!-- functions.php -->
+
 <?php
 
-/** Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
+/* Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
 
 if ( ! function_exists( 'theme_setup' ) ):
 
 function theme_setup() {
 
 	/* This theme uses post thumbnails (aka "featured images")
-	*  all images will be cropped to thumbnail size (below), as well as
-	*  a square size (also below). You can add more of your own crop
-	*  sizes with add_image_size. */
+	 * all images will be cropped to thumbnail size (below), as well as
+	 * a square size (also below). You can add more of your own crop
+	 * sizes with add_image_size.
+	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(120, 90, true);
 	add_image_size('square', 150, 150, true);
@@ -19,8 +22,9 @@ function theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/* This theme uses wp_nav_menu() in one location.
-	* You can allow clients to create multiple menus by
-  * adding additional menus to the array. */
+	 * You can allow clients to create multiple menus by
+ 	 * adding additional menus to the array.
+ 	 */
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation'
 	) );
@@ -38,11 +42,11 @@ endif;
 
 add_action( 'after_setup_theme', 'theme_setup' );
 
-
-/* Add all our JavaScript files here.
-We'll let WordPress add them to our templates automatically instead
-of writing our own script tags in the header and footer. */
-
+/* 
+ * Add all our JavaScript files here.
+ * We'll let WordPress add them to our templates automatically instead
+ * of writing our own script tags in the header and footer.
+ */
 function hackeryou_scripts() {
 
 	//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
@@ -74,9 +78,7 @@ function hackeryou_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
 
-
 /* Custom Title Tags */
-
 function hackeryou_wp_title( $title, $sep ) {
 	global $paged, $page;
 
@@ -102,42 +104,31 @@ function hackeryou_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'hackeryou_wp_title', 10, 2 );
 
-/*
-  Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- */
+/* Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link. */
 function hackeryou_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
 
-
-/*
- * Sets the post excerpt length to 40 characters.
- */
+/* Sets the post excerpt length to 40 characters. */
 function hackeryou_excerpt_length( $length ) {
 	return 40;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
-/*
- * Returns a "Continue Reading" link for excerpts
- */
+/* Returns a "Continue Reading" link for excerpts */
 function hackeryou_continue_reading_link() {
 	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
 }
 
-/**
- * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link().
- */
+/* Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and hackeryou_continue_reading_link(). */
 function hackeryou_auto_excerpt_more( $more ) {
 	return ' &hellip;' . hackeryou_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'hackeryou_auto_excerpt_more' );
 
-/**
- * Adds a pretty "Continue Reading" link to custom post excerpts.
- */
+/* Adds a pretty "Continue Reading" link to custom post excerpts. */
 function hackeryou_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
 		$output .= hackeryou_continue_reading_link();
@@ -145,7 +136,6 @@ function hackeryou_custom_excerpt_more( $output ) {
 	return $output;
 }
 add_filter( 'get_the_excerpt', 'hackeryou_custom_excerpt_more' );
-
 
 /*
  * Register a single widget area.
@@ -164,14 +154,11 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
 
-/**
- * Removes the default styles that are packaged with the Recent Comments widget.
- */
+/* Removes the default styles that are packaged with the Recent Comments widget. */
 function hackeryou_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
@@ -180,9 +167,8 @@ add_action( 'widgets_init', 'hackeryou_remove_recent_comments_style' );
 
 
 if ( ! function_exists( 'hackeryou_posted_on' ) ) :
-/**
- * Prints HTML with meta information for the current post—date/time and author.
- */
+
+/* Prints HTML with meta information for the current post—date/time and author. */
 function hackeryou_posted_on() {
 	printf('<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s',
 		'meta-prep meta-prep-author',
@@ -201,9 +187,8 @@ function hackeryou_posted_on() {
 endif;
 
 if ( ! function_exists( 'hackeryou_posted_in' ) ) :
-/**
- * Prints HTML with meta information for the current post (category, tags and permalink).
- */
+
+/* Prints HTML with meta information for the current post (category, tags and permalink). */
 function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
@@ -226,7 +211,6 @@ function hackeryou_posted_in() {
 endif;
 
 /* Get rid of junk! - Gets rid of all the crap in the header that you dont need */
-
 function clean_stuff_up() {
 	// windows live
 	remove_action('wp_head', 'rsd_link');
