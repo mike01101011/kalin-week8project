@@ -1,0 +1,93 @@
+
+// variables variables variables variables variables variables variables variables variables variables variables
+
+$colorBackground: #F5F3F6;
+$colorFontDark: #3E4F5A;
+$colorFontLight: #6B808E;
+$colorAccent1: #FEFE81;
+$colorAccent2: #2CA7F3;
+$colorAccent3: #3ECED2;
+
+$twitter: #00aced;
+$github: #4183C4;
+$att: #3AA5DC;
+$google: #4285F4;
+
+
+$fontTitle: 'Poiret One', cursive;
+$fontText: 'Cousine';
+
+// styling styling styling styling styling styling styling styling styling styling styling styling styling
+
+body {
+	font-family: $fontText;
+	color: $colorFontLight;
+	background-color: #F5F3F6;
+}
+h1, 
+h2, 
+h2, 
+h2, 
+h2, 
+h2 {
+	font-family: $fontTitle;
+	color: $colorFontDark;
+}
+
+.contact {
+	background-color: $colorFontDark;
+}
+.contactList {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.contactList a {
+	color: $colorBackground;
+	transition: color 1s;
+}
+.contactList a:hover {
+	color: $colorFontLight;
+}
+
+.siteList {
+	list-style-type: none;
+	padding: 0;
+	border-top: 1px solid $colorFontDark;
+	border-bottom: 1px solid $colorFontDark;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.siteList a {
+	color: $colorFontLight;
+	transition: color 1s;
+}
+.siteList a:hover {
+	color: $colorFontDark;
+}
+
+footer {
+	color: $colorBackground;
+	background-color: $colorAccent2;
+}
+
+p {
+	margin: 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.goToTop a {
+	color: $colorBackground;
+	transition: color 1s;
+}
+.goToTop a:hover {
+	color: $colorFontLight;
+
+}

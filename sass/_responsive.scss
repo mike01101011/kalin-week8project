@@ -1,0 +1,22 @@
+// responsive responsive responsive responsive responsive responsive responsive responsive responsive responsive
+
+/* portrait tablet / small desktops */
+@media all and (max-width: 940px) {
+	body {
+		background-color: green;
+	}
+}
+
+/* landscape phone / portrait tablet */
+@media all and (max-width: 768px) {
+	body {
+		background-color: purple;
+	}
+}
+
+/* landscape phone / portrait phone */
+@media all and (max-width: 480px) {
+	body {
+		background-color: orange;
+	}
+}
