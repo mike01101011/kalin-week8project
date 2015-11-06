@@ -5,9 +5,10 @@
 		    	<div class="footer">
 			    	<div class="logo">
 			    		<h2 class="logo">MK</h2>
+			    		<p>Mike Kalin</p>
 			    	</div>
 			    	<div class="goToTop">
-			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i> Go To Top</a>
+			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
 			    	</div>
 			    </div>
 			</div><!-- container -->

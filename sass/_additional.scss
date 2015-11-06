@@ -137,11 +137,19 @@ i {
 	justify-content: space-between;
 }
 .siteList a {
+	@include fontSize(18);
 	color: $colorFontLight;
 	transition: color 1s;
+	i {
+		color: $colorBackground;
+		transition: color 1s;
+	}
 }
 .siteList a:hover {
 	color: $colorFontDark;
+	i {
+		color: $colorFontDark;
+	}
 }
 
 // footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
@@ -166,12 +174,29 @@ footer {
 	top:650px;
 	right:30px;
 	display:none;
+	@include fontSize(22);
+	font-weight: 700;
 	a {
-		color: $colorFontLight;
-		transition: color 1s;
+		color: $colorFontDark;
+		transition: color 1s, background-color 1s, padding 1s;
+		border: 2px solid $colorFontDark;
+		border-radius: 5px;
+		padding: 20px 20px 20px 0px;
+		i {
+			color: rgba(245, 243, 246, 0);
+			transition: color 1s;
+			margin: 0;
+			transition: margin 1s;
+		}
 	}
 	a:hover {
-		color: $colorFontDark;
+		color: $colorBackground;
+		background-color: $colorFontDark;
+		padding-left: 20px;
+		i {
+			color: rgba(245, 243, 246, 1);
+			margin-right: 15px;
+		}
 	}
 }
 
@@ -186,6 +211,7 @@ footer {
 .skillsBorder {
 	background-color: $colorAccent3;
 	height: 365px;
+	transform: skewY(-10deg);
 }
 .contactBorder {
 	background-color: $colorFontLight;	
@@ -255,9 +281,4 @@ footer {
 			// font-size: 88px;
 		}
 	}
-}
-
-// skills skills skills skills skills skills skills skills skills skills skills skills skills skills skills
-section.skillsBorder {
-	transform: skewY(-10deg);
 }

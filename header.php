@@ -16,7 +16,6 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
 
-
     <?php wp_head(); ?>
   </head>
 
@@ -53,19 +52,19 @@
       <div class="container">
         <ul class="siteList">
           <li>
-            <a href="#about">About</a>
+            <a class="smoothScroll" href="#about"><i class="fa fa-chevron-down"></i>About</a>
           </li>
           <li>
-            <a href="#about">Skills</a>
+            <a class="smoothScroll" href="#skills"><i class="fa fa-chevron-down"></i>Skills</a>
           </li>
           <li>
           <h2 class="logo">MK</h2>
           </li>
           <li>
-            <a href="#about">Projects</a>
+            <a class="smoothScroll" href="#projects"><i class="fa fa-chevron-down"></i>Projects</a>
           </li>
           <li>
-            <a href="#about">Contact</a>
+            <a class="smoothScroll" href="#contact"><i class="fa fa-chevron-down"></i>Contact</a>
           </li>
         </ul>
       <!-- </div>container -->
