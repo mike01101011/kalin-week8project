@@ -23,9 +23,9 @@
   <body <?php body_class(); ?>>
 
 
-    <nav class="contact">
-      <div class="container">
-        <ul class="contactList">
+    <nav class="navContact">
+      <!-- <div class="container"> -->
+        <ul class="navContactList topNavList">
           <li>
             <a class ="" href="https://github.com/mike01101011" target="_blank">
               <i class="fa fa-github-square fa-2x"></i>
@@ -59,7 +59,7 @@
             <a href="#about">Skills</a>
           </li>
           <li>
-          <h1 class="logo">MK</h1>
+          <h2 class="logo">MK</h2>
           </li>
           <li>
             <a href="#about">Projects</a>
@@ -68,10 +68,17 @@
             <a href="#about">Contact</a>
           </li>
         </ul>
-      </div><!-- container -->
+      <!-- </div>container -->
     </nav><!-- site -->
     <header>
       <div class="container">
-        <h1>MIKE KALIN</h1>
+        <div class="header">
+          <div class="headerLeft">
+            <div class="triangleBlue"></div>
+          </div>
+          <div class="headerRight">
+            <h1>MIKE KALIN</h1>
+          </div>
+        </div>
       </div><!-- container -->
     </header>

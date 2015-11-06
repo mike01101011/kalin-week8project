@@ -4,7 +4,7 @@
 			<div class="container">
 		    	<div class="footer">
 			    	<div class="logo">
-			    		<h1 class="logo">MK</h1>
+			    		<h2 class="logo">MK</h2>
 			    	</div>
 			    	<div class="goToTop">
 			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i> Go To Top</a>
@@ -12,9 +12,9 @@
 			    </div>
 			</div><!-- container -->
 		</footer>
-		<nav class="contact">
+		<nav class="navContact bottomNav">
 		  <div class="container">
-		    <ul class="contactList">
+		    <ul class="navContactList bottomNavList">
 		      <li>
 		        <a class ="" href="https://github.com/mike01101011" target="_blank">
 		          <i class="fa fa-github-square fa-2x"></i>
@@ -37,7 +37,7 @@
 		      </li>
 		    </ul>
 		  </div><!-- container --> 
-		</nav><!-- contact -->
+		</nav><!-- navContact -->
 
 		<script>
 			/* Google Analytics! */

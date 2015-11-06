@@ -1,66 +1,140 @@
+// mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins
+
+@mixin fontSize($value) {
+	// older browser support
+	font-size: $value *1px;
+	// newer browsers
+	font-size: ($value / 10) *1rem;
+}
 
 // variables variables variables variables variables variables variables variables variables variables variables
-
 $colorBackground: #F5F3F6;
 $colorFontDark: #3E4F5A;
 $colorFontLight: #6B808E;
 $colorAccent1: #FEFE81;
 $colorAccent2: #2CA7F3;
 $colorAccent3: #3ECED2;
-
-$twitter: #00aced;
-$github: #4183C4;
-$att: #3AA5DC;
-$google: #4285F4;
-
-
+$colorBorderDark: #384751;
 $fontTitle: 'Poiret One', cursive;
 $fontText: 'Cousine';
 
 // styling styling styling styling styling styling styling styling styling styling styling styling styling
-
-body {
-	-webkit-font-smoothing: antialiased;
-	font-family: $fontText;
-	color: $colorFontLight;
-	background-color: #F5F3F6;
+html {
+	position: relative;
+	font-size: 62.5%;
 }
-h1, 
-h2, 
-h2, 
-h2, 
-h2, 
-h2 {
-	font-family: $fontTitle;
-	color: $colorFontDark;
+img {
+	display: block;
 }
-
-.contact {
-	background-color: $colorFontDark;
+.container {
+	max-width: 70%;
+	margin: 0 auto;
 }
-.contactList {
+.contact .container {
+	max-width: 80%;
+}
+ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	display: flex;
-	justify-content: flex-end;
 }
-.contactList a {
-	color: $colorBackground;
-	transition: color 1s;
-}
-.contactList a:hover {
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: $fontText;
+	@include fontSize(15);
+	letter-spacing: 0.5px;
 	color: $colorFontLight;
+	background-color: $colorBackground;
+}
+body::after {
+  content: "";
+   // background-image: url(../kalin-week8project_theme-hackeryou/images/noisy_grid.png);
+  background-image: url(../kalin-week8project_theme-hackeryou/images/tiny_grid.png);
+  background-attachment: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: $fontTitle;
+	color: $colorFontDark;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h1 {
+	@include fontSize(58);
+	letter-spacing: 10px;	
+}
+h2 {
+	@include fontSize(32);
+	letter-spacing: 7px;	
+}
+h3 {
+	@include fontSize(22);
+	letter-spacing: 4px;	
+}
+h4 {
+	@include fontSize(18);
+	letter-spacing: 3px;
+}
+p {
+	margin: 0;
+	font-weight: 300;
+}
+main section {
+	margin-top: 10px;
 }
 
+// contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav
+.navContact {
+	background-color: $colorFontDark;
+}
+.topNavList li {
+	border-left: 1px solid $colorBorderDark;
+}
+.bottomNav {
+		background-color: $colorAccent2;
+	}
+.navContactList {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		text-align: center;
+	}
+}
+.bottomNavList {
+		border-top: 1px solid $colorBackground;
+	}
+.navContactList a {
+	display: inline-block;
+	border-radius: 50%;
+	padding: 0 3px;
+	// border: 1px solid $colorBorderDark;
+	color: $colorBackground;
+	transition: background-color 1s;
+}
+.navContactList a:hover {
+	background-color: $colorFontLight;
+}
+i {
+	margin: 10px;
+	// border-radius: 50px;
+}
+
+// siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav
 .siteList {
-	list-style-type: none;
-	padding: 0;
-	border-top: 1px solid $colorFontDark;
-	border-bottom: 1px solid $colorFontDark;
+	// border-top: 1px solid $colorFontDark;
+	// border-bottom: 1px solid $colorFontDark;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .siteList a {
 	color: $colorFontLight;
@@ -70,25 +144,120 @@ h2 {
 	color: $colorFontDark;
 }
 
+// footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
 footer {
 	color: $colorBackground;
 	background-color: $colorAccent2;
+	margin-top: 10px;
+	h2 {
+		color: $colorBackground;
+	}
 }
-
-p {
-	margin: 0;
-}
-
 .footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 200px;
 }
-.goToTop a {
-	color: $colorBackground;
-	transition: color 1s;
-}
-.goToTop a:hover {
-	color: $colorFontLight;
 
+// goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
+.goToTop {
+	position:fixed;
+	top:650px;
+	right:30px;
+	display:none;
+	a {
+		color: $colorFontLight;
+		transition: color 1s;
+	}
+	a:hover {
+		color: $colorFontDark;
+	}
+}
+
+// border border border border border border border border border border border border border border border border
+.aboutBorder {
+	background-color: $colorAccent2;
+}
+.projectsBorder {
+	background-color: $colorAccent1;
+	height: 365px;
+}
+.skillsBorder {
+	background-color: $colorAccent3;
+	height: 365px;
+}
+.contactBorder {
+	background-color: $colorFontLight;	
+	height: 365px;
+}
+
+// project project project project project project project project project project project project
+.project {
+	display: flex;
+	align-items: center;
+	.projectLeft {
+		width: 75%;
+		h4 {
+			color: $colorAccent2;
+			font-weight: 700;
+		}
+		h3 {
+			color: $colorFontDark;
+			font-family: $fontTitle;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	.projectRight {
+		width: 25%;
+		img {
+			float: right;
+			max-height: 100%;
+			max-width: 100%;
+			border: 1px solid $colorFontDark;
+		}
+	}
+}
+
+// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+
+// http://apps.eky.hk/css-triangle-generator/
+.triangleBlue {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 700px 700px 0 0;
+	border-color: #2ca7f3 transparent transparent transparent;
+	margin: 0;
+}
+
+// http://apps.eky.hk/css-triangle-generator/
+.triangleYellow {
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 480px 480px 480px;
+	border-color: transparent transparent #fefe81 transparent;
+}
+
+// header header header header header header header header header header header header header header header 
+.header {
+	display: flex;
+	align-items: center;
+	div {
+		width: 50%;
+	}
+	.headerRight {
+		text-align: center;
+		h1 {
+			// font-size: 88px;
+		}
+	}
+}
+
+// skills skills skills skills skills skills skills skills skills skills skills skills skills skills skills
+section.skillsBorder {
+	transform: skewY(-10deg);
 }
