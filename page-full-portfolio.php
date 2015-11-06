@@ -1,34 +1,43 @@
 <?php /* Template Name: Full Page, No Sidebar, Portfolio */ get_header();  ?>
 
 <main>
-
-
+	<div class="wrapper"><section class="aboutBorder"></section><!-- skillsBorder --></div><!-- wrappper -->
+	
 	<section class="about" id="about">
 		<div class="container">
-			
+			<h2>About</h2>
+			<p>Front end web developer - Toronto, Ontario</p>
+			<p>Terrible at self promotion - Adept at self deprecation</p>
+			<p>Fluent in sarcasm - Versed in dry wit</p>
+			<p>Lover of cheese pizza - Drinker of delicious beer</p>
+			<p>Coffee crusader - Ice cream explorer - Taco aficionado</p>
+			<p>Equal parts super and duper - References available upon request</p>
 		</div><!-- container -->
 	</section><!-- about -->
 
-	<section class="skillsBorder">
-		<div class="container">
-			
-		</div><!-- container -->
-	</section><!-- skillsBorder -->
+	<div class="wrapper"><section class="skillsBorder"></section><!-- skillsBorder --></div><!-- wrappper -->
 
 	<section class="skills" id="skills">
 		<div class="container">
-			
+			<h2>Skills</h2>
+			<p>-HTML5, CSS3 and responsive design</p>
+			<p>-Precompiled syntaxes such as Jade and Sass</p>
+			<p>-JavaScript fundamentals, jQuery and using APIs</p>
+			<p>-Workflow automation and Javascript tooling with Grunt</p>
+			<p>-WordPress theme development (HTML & CSS site conversion, custom post types and fields, etc.)</p>
+			<p>-Version control and open-sourcing code using Git and Github</p>
+			<p>-Paired programming & working in teams</p>
+			<p>-Sublime Text</p>
+			<p>-Best practices for modern web development</p>
+			<p>-Website accessibility requirements</p>
 		</div><!-- container -->
 	</section><!-- skills -->
 
-	<section class="projectsBorder">
-		<div class="container">
-			
-		</div><!-- container -->
-	</section><!-- projectBorder -->
+	<div class="wrapper"><section class="projectsBorder"></section><!-- projectBorder --></div><!-- wrappper -->
 
 	<section class="projects" id="projects">
 		<div class="container">
+			<h2>Projects</h2>
 			<?php $showPortfolio = new WP_Query( array( 'posts_per_page' => 8, 'post_type'=>'portfolio', 'order' => 'ASC' ) ); ?>
 
 			<?php if ( $showPortfolio->have_posts() ) : ?>
@@ -54,18 +63,16 @@
 		</div><!-- container -->
 	</section><!-- projects -->
 
-	<section class="contactBorder">
-		<div class="container">
-			
-		</div><!-- continer -->
-	</section><!-- contactBorder -->
+	<div class="wrapper"><section class="contactBorder"></section><!-- contactBorder --></div><!-- wrappper -->
 	
 	<section class="contact" id="contact">
 		<div class="container">
-			 <div class="triangleYellow"></div>
+			<h2>Contact</h2>
+			<?php echo do_shortcode('[contact-form-7 id="65" title="Contact Form"]'); ?>
 		</div><!-- container -->
 	</section><!-- contact -->
 
+	<div class="wrapper"><section class="footerBorder"><div class="triangleYellow"></div></section><!-- footerBorder --></div><!-- wrappper -->
 </main>
 
 <?php get_footer(); ?>
