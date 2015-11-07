@@ -6,12 +6,26 @@
 	<section class="about" id="about">
 		<div class="container">
 			<h2>About</h2>
-			<p>Front end web developer - Toronto, Ontario</p>
-			<p>Terrible at self promotion - Adept at self deprecation</p>
-			<p>Fluent in sarcasm - Versed in dry wit</p>
-			<p>Lover of cheese pizza - Drinker of delicious beer</p>
-			<p>Coffee crusader - Ice cream explorer - Taco aficionado</p>
-			<p>Equal parts super and duper - References available upon request</p>
+			<div class="aboutFlex">
+				<p>-Front end web developer</p>
+				<p>-Toronto, Ontario</p>
+			
+				<p>-Terrible at self promotion</p>
+				<p>-Adept at self deprecation</p>
+			
+				<p>-Fluent in sarcasm</p>
+				<p>-Versed in dry wit</p>
+			
+				<p>-Lover of cheese pizza</p>
+				<p>-Drinker of delicious beer</p>
+			
+				<p>-Coffee crusader</p>
+				<p>-Ice cream explorer</p>
+				<p>-Taco aficionado</p>
+			
+				<p>-Equal parts super and duper</p>				
+				<p>-References available upon request</p>
+			</div>
 		</div><!-- container -->
 	</section><!-- about -->
 
@@ -23,7 +37,7 @@
 			<p>-HTML5, CSS3 and responsive design</p>
 			<p>-Precompiled syntaxes such as Jade and Sass</p>
 			<p>-JavaScript fundamentals, jQuery and using APIs</p>
-			<p>-Workflow automation and Javascript tooling with Grunt</p>
+			<p>-Workflow automation and Javascript tooling with Gulp</p>
 			<p>-WordPress theme development (HTML & CSS site conversion, custom post types and fields, etc.)</p>
 			<p>-Version control and open-sourcing code using Git and Github</p>
 			<p>-Paired programming & working in teams</p>
