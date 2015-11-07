@@ -50,4 +50,7 @@
 
 		<?php wp_footer(); ?>
 	</body>
+	
+<!-- background pattern from subtlepatterns.com -->
+
 </html>
