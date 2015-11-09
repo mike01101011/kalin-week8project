@@ -19,6 +19,12 @@ $fontTitle: 'Poiret One', cursive;
 $fontText: 'Cousine';
 
 // styling styling styling styling styling styling styling styling styling styling styling styling styling
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 html {
 	position: relative;
 	font-size: 62.5%;
@@ -43,7 +49,6 @@ ul {
 	margin: 0;
 }
 body {
-	-webkit-font-smoothing: antialiased;
 	font-family: $fontText;
 	@include fontSize(18);
 	letter-spacing: 0.5px;
@@ -71,6 +76,7 @@ h4 {
 	color: $colorFontDark;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-shadow: 2px 2px 2px rgba(128,128,128,.5);
 }
 h1 {
 	@include fontSize(61);
@@ -99,9 +105,25 @@ p {
 // contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav contactNav
 .navContact {
 	background-color: $colorFontDark;
+	ul.topNavList {
+		width: 50%;
+	}
+}
+.navContactTop {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .topNavList li {
 	border-left: 1px solid $colorBorderDark;
+}
+.hamburger {
+	border-right: 1px solid $colorBorderDark;
+	a {
+		margin: 5px;
+	}
+	display: none;
 }
 .bottomNav {
 		background-color: $colorAccent2;
@@ -116,14 +138,15 @@ p {
 .bottomNavList {
 		border-top: 1px solid $colorBackground;
 	}
-.navContactList a {
+.navContactList a, .hamburger a {
 	display: inline-block;
 	border-radius: 50%;
 	padding: 0 3px;
 	color: $colorBackground;
 	transition: background-color 1s;
+	text-shadow: 1px 1px 1px rgba(128,128,128,.5);
 }
-.navContactList a:hover {
+.navContactList a:hover, .hamburger a:hover {
 	background-color: $colorFontLight;
 }
 i {
@@ -173,32 +196,35 @@ footer {
 // goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
 .goToTop {
 	position:fixed;
-	bottom:20px;
+	bottom:15px;
 	right:25px;
 	display:none;
 	@include fontSize(18);
 	font-weight: 700;
 	a {
+		text-shadow: 2px 2px 2px rgba(128,128,128,.5);
+		box-shadow: 2px 2px 2px rgba(128,128,128,.5);
 		color: $colorFontDark;
 		transition: color 1s, background-color 1s, padding 1s;
 		border: 2px solid $colorFontDark;
 		border-radius: 5px;
-		padding: 10px 15px 10px 0px;
+		padding: 10px 15px 10px 5px;
 		i {
-			color: rgba(245, 243, 246, 0);
-			margin: 0;
-			padding: 0;
+			// color: rgba(245, 243, 246, 0);
+			// margin: 0;
+			// padding: 0;
+			color: $colorFontDark;
 			transition: color 1s, margin 1s;
 		}
 	}
 	a:hover {
 		color: $colorBackground;
 		background-color: $colorFontDark;
-		padding-left: 5px;
-		padding-right: 5px;
+		// padding-left: 5px;
+		// padding-right: 5px;
 		i {
 			color: rgba(245, 243, 246, 1);
-			margin-right: 10px;
+			// margin-right: 10px;
 		}
 	}
 }
@@ -208,23 +234,28 @@ footer {
 	background-color: $colorAccent1;
 }
 .projectsBorder {
-	background-color: $colorAccent1;
+	background-color: $colorFontDark;
 }
 .skillsBorder {
 	background-color: $colorAccent3;
 	transform: skewY(-10deg);
+	margin-bottom: 130px;
 }
 .contactBorder {
-	background-color: $colorFontLight;	
+	background-color: $colorAccent3;	
 }
 .aboutBorder, 
 .projectsBorder, 
 .skillsBorder, 
 .contactBorder {
-	min-height: 365px;
+	// min-height: 365px;
+	min-height: 180px;
 	position: relative;
 	z-index: -1;
 	box-shadow: 5px 5px 5px rgba(128,128,128,.5);
+}
+.aboutBorder, .projectsBorder {
+	margin: 50px 0;
 }
 
 // project project project project project project project project project project project project
@@ -251,6 +282,7 @@ footer {
 			max-height: 100%;
 			max-width: 100%;
 			border: 1px solid $colorFontDark;
+			box-shadow: 5px 5px 5px rgba(128,128,128,.5);
 		}
 	}
 }
@@ -272,14 +304,17 @@ footer {
 
 // http://apps.eky.hk/css-triangle-generator/
 .triangleYellow {
-	margin: 0 auto;
+	margin: 0 0 0 auto;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 480px 480px 480px;
+	// border-width: 0 480px 480px 480px;
+	// border-color: #fefe81 transparent transparent transparent;
+	border-width: 0 0 700px 700px;
 	border-color: transparent transparent #fefe81 transparent;
 	filter: drop-shadow(5px 5px 5px rgba(128,128,128,.5));
 	position: relative;
+	right: 223px;
 	z-index: -1;
 }
 
@@ -292,47 +327,66 @@ footer {
 	}
 	.headerRight {
 		text-align: center;
-		h1 {
-			// font-size: 88px;
-		}
 	}
 }
+
 // projects projects projects projects projects projects projects projects projects projects projects
 .project {
 	margin-bottom: 50px;
 }
 
 // contact contact contact contact contact contact contact contact contact contact contact contact
+.contact div.container {
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+div.contactLeft, div.contactRight {
+	width: 50%;
+}
 
 form{
-	input[type="text"], input[type="email"], textarea {
-		border: 1px solid $colorFontDark;
-		width: 480px;
-		background-color: rgba(245, 243, 246, 0);
-	}
-	input[type="submit"] {
-	    border: 1px solid $colorFontDark;
-		background-color: rgba(245, 243, 246, 0);
-		width: 80px;
-		text-align: center;
-	}
-	textarea {
-		resize: none;
-		height: 80px;
-	}
 	input[type="submit"], input[type="text"], input[type="email"], textarea {
 		font-family: $fontText;
 		@include fontSize(18);
+		letter-spacing: 0.5px;
+		color: $colorFontDark;
+		outline-color: $colorFontLight;
+		background-color: rgba($colorBackground, .5);
+		box-shadow: 5px 5px 5px rgba(128,128,128,.5);
+		margin-bottom: 10px;
+
+	}
+	input[type="submit"], input[type="text"], input[type="email"] {
+		height: 40px;
+	}
+	input[type="text"], input[type="email"], textarea {
+		border: 1px solid $colorFontDark;
+		width: 100%;
+		padding: 0 0 0 10px;
+	}
+	input[type="submit"] {
+		color: $colorFontLight;
+	    border: 1px solid $colorFontDark;
+		width: 80px;
+		text-align: center;
+		@include fontSize(21);
+		letter-spacing: 3px;
+		padding: 0 10px;
+	}
+	textarea {
+		resize: none;
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+	::-webkit-input-placeholder {
 		color: $colorFontLight;
 	}
-		input[type="submit"], input[type="text"], input[type="email"] {
-		height: 30px;
+	div.wpcf7-response-output {
+		color: $colorFontDark;
+		background-color: rgba($colorBackground, .5);
+		box-shadow: 5px 5px 5px rgba(128,128,128,.5);
+		margin: 0;
 	}
-}
-// about about about about about about about about about about about about
-.aboutFlex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
   <head>
     <?php // Load Meta ?>
@@ -20,33 +20,36 @@
   </head>
 
   <body <?php body_class(); ?>>
+  <div class="modal"></div>
 
-
-    <nav class="navContact">
+    <nav class="navContact navContactTop">
       <!-- <div class="container"> -->
+        <div class="hamburger">
+          <a class ="hamburgerLink" href="" ><i class="fa fa-bars fa-2x"></i></a>
+        </div>
         <ul class="navContactList topNavList">
           <li>
-            <a class ="" href="https://github.com/mike01101011" target="_blank">
+            <a class ="topNavListLink" href="https://github.com/mike01101011" target="_blank">
               <i class="fa fa-github-square fa-2x"></i>
             </a>
           </li>
           <li>
-            <a class ="" href="https://twitter.com/mikekalin_" target="_blank">
+            <a class ="topNavListLink" href="https://twitter.com/mikekalin_" target="_blank">
               <i class="fa fa-twitter-square fa-2x"></i>
             </a>
           </li>
           <li>
-            <a class ="" href="tel:+1-647-987-9279">
+            <a class ="topNavListLink" href="tel:+1-647-987-9279">
               <i class="fa fa-phone-square fa-2x"></i>
             </a>
           </li>
           <li>
-             <a class ="" href="mailto:mikekalin@gmail.com">
+             <a class ="topNavListLink" href="mailto:mikekalin@gmail.com">
               <i class="fa fa-envelope-square fa-2x"></i>
             </a>
           </li>
         </ul>
-      </div><!-- container --> 
+      <!-- </div>container  -->
     </nav><!-- contact -->
     <nav class="site">
       <div class="container">

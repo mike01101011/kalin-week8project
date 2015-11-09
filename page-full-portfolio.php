@@ -6,26 +6,13 @@
 	<section class="about" id="about">
 		<div class="container">
 			<h2>About</h2>
-			<div class="aboutFlex">
-				<p>-Front end web developer</p>
-				<p>-Toronto, Ontario</p>
-			
-				<p>-Terrible at self promotion</p>
-				<p>-Adept at self deprecation</p>
-			
-				<p>-Fluent in sarcasm</p>
-				<p>-Versed in dry wit</p>
-			
-				<p>-Lover of cheese pizza</p>
-				<p>-Drinker of delicious beer</p>
-			
-				<p>-Coffee crusader</p>
-				<p>-Ice cream explorer</p>
-				<p>-Taco aficionado</p>
-			
-				<p>-Equal parts super and duper</p>				
+				<p>-Front end web developer | Toronto, Ontario</p>
+				<p>-Terrible at self promotion | Adept at self deprecation</p>
+				<p>-Fluent in sarcasm | Versed in dry wit</p>
+				<p>-Lover of cheese pizza | Drinker of delicious beer</p>
+				<p>-Coffee crusader | Ice cream explorer | Taco aficionado</p>
+				<p>-Equal parts super and duper</p>
 				<p>-References available upon request</p>
-			</div>
 		</div><!-- container -->
 	</section><!-- about -->
 
@@ -34,16 +21,11 @@
 	<section class="skills" id="skills">
 		<div class="container">
 			<h2>Skills</h2>
-			<p>-HTML5, CSS3 and responsive design</p>
-			<p>-Precompiled syntaxes such as Jade and Sass</p>
-			<p>-JavaScript fundamentals, jQuery and using APIs</p>
-			<p>-Workflow automation and Javascript tooling with Gulp</p>
-			<p>-WordPress theme development (HTML & CSS site conversion, custom post types and fields, etc.)</p>
-			<p>-Version control and open-sourcing code using Git and Github</p>
-			<p>-Paired programming & working in teams</p>
-			<p>-Sublime Text</p>
-			<p>-Best practices for modern web development</p>
-			<p>-Website accessibility requirements</p>
+			<p>-HTML5 | CSS3 | Sass</p>
+			<p>-JavaScript | jQuery | Angular | APIs</p>
+			<p>-Git | Github | Gulp</p>
+			<p>-WordPress | Sublime Text</p>
+			<p>-Accessibility | Responsive Design</p>
 		</div><!-- container -->
 	</section><!-- skills -->
 
@@ -66,7 +48,12 @@
 							<p><?php the_content(); ?></p>
 						</div>
 						<div class="projectRight">
-							<?php echo get_the_post_thumbnail( $post->ID, 'medium'); ?>
+							<?php while( has_sub_field('images') ): ?>
+								<div class="image">
+									<?php $image = get_sub_field('image'); ?>
+									<img src="<?php echo $image['sizes']['square'] ?>">
+								</div>
+							<?php endwhile; ?>
 						</div>
 					</div>
 				<?php } ?>
@@ -81,12 +68,16 @@
 	
 	<section class="contact" id="contact">
 		<div class="container">
-			<h2>Contact</h2>
-			<?php echo do_shortcode('[contact-form-7 id="65" title="Contact Form"]'); ?>
+			<div class="contactLeft">
+				<h2>Contact</h2>
+				<?php echo do_shortcode('[contact-form-7 id="65" title="Contact Form"]'); ?>	
+			</div>
+			<div class="contactRight">
+				<div class="triangleYellow"></div>
+			</div>
+			
 		</div><!-- container -->
 	</section><!-- contact -->
-
-	<div class="wrapper"><section class="footerBorder"><div class="triangleYellow"></div></section><!-- footerBorder --></div><!-- wrappper -->
 </main>
 
 <?php get_footer(); ?>

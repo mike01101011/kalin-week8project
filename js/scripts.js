@@ -15,4 +15,9 @@ $(function(){
 		return false;
 	});
 	// http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery
+
+	$( '.hamburgerLink' ).click(function() {
+		$( ".modal" ).toggle( "slide" );
+	});
+
 });
