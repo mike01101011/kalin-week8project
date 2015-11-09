@@ -18,24 +18,16 @@
 		 		<p>Created by Mike Kalin 2015</p>
 			    <ul class="navContactList bottomNavList">
 			      <li>
-			        <a class ="" href="https://github.com/mike01101011" target="_blank">
-			          <i class="fa fa-github-square fa-2x"></i>
-			        </a>
+			        <a class ="" href="https://github.com/mike01101011" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
 			      </li>
 			      <li>
-			        <a class ="" href="https://twitter.com/mikekalin_" target="_blank">
-			          <i class="fa fa-twitter-square fa-2x"></i>
-			        </a>
+			        <a class ="" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 			      </li>
 			      <li>
-			        <a class ="" href="tel:+1-647-987-9279">
-			          <i class="fa fa-phone-square fa-2x"></i>
-			        </a>
+			        <a class ="" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
 			      </li>
 			      <li>
-			         <a class ="" href="mailto:mikekalin@gmail.com">
-			          <i class="fa fa-envelope-square fa-2x"></i>
-			        </a>
+			         <a class ="" href="mailto:mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>
 			      </li>
 			    </ul>
 			</div><!-- container --> 

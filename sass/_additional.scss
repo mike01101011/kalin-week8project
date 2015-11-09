@@ -85,6 +85,10 @@ h1 {
 h2 {
 	@include fontSize(35);
 	letter-spacing: 7px;
+	i {
+		color: rgba($colorFontDark, 0);
+		text-shadow: none;
+	}
 }
 h3 {
 	@include fontSize(25);

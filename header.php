@@ -29,24 +29,16 @@
         </div>
         <ul class="navContactList topNavList">
           <li>
-            <a class ="topNavListLink" href="https://github.com/mike01101011" target="_blank">
-              <i class="fa fa-github-square fa-2x"></i>
-            </a>
+            <a class ="topNavListLink" href="https://github.com/mike01101011" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
           </li>
           <li>
-            <a class ="topNavListLink" href="https://twitter.com/mikekalin_" target="_blank">
-              <i class="fa fa-twitter-square fa-2x"></i>
-            </a>
+            <a class ="topNavListLink" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
           </li>
           <li>
-            <a class ="topNavListLink" href="tel:+1-647-987-9279">
-              <i class="fa fa-phone-square fa-2x"></i>
-            </a>
+            <a class ="topNavListLink" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
           </li>
           <li>
-             <a class ="topNavListLink" href="mailto:mikekalin@gmail.com">
-              <i class="fa fa-envelope-square fa-2x"></i>
-            </a>
+             <a class ="topNavListLink" href="mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>
           </li>
         </ul>
       <!-- </div>container  -->
@@ -61,7 +53,7 @@
             <a class="smoothScroll" href="#skills"><i class="fa fa-chevron-down"></i>Skills</a>
           </li>
           <li>
-          <h2 class="logo">MK</h2>
+          <h2 class="logo"><i class="fa fa-chevron-down"></i>MK</h2>
           </li>
           <li>
             <a class="smoothScroll" href="#projects"><i class="fa fa-chevron-down"></i>Projects</a>
