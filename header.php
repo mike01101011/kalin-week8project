@@ -35,7 +35,7 @@
             <a class ="topNavListLink" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
           </li>
           <li>
-            <a class ="topNavListLink" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
+            <a class ="topNavListLink" href="https://www.linkedin.com/in/michaelkalin" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></i></a>
           </li>
           <li>
              <a class ="topNavListLink" href="mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>

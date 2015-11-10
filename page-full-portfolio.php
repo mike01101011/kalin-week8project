@@ -48,11 +48,6 @@
 						<div class="projectLeft">
 							<h3><?php echo get_field('short_description'); ?></h3>
 							<p><?php the_content(); ?></p>
-							<div class="projectBottom">
-								<?php while( has_sub_field('technical_components') ): ?>	
-									<h5>--<?php echo get_sub_field('technical_component'); ?>--</h5>
-								<?php endwhile; ?>	
-							</div>
 						</div>
 						<div class="projectRight">
 							<?php while( has_sub_field('images') ): ?>
@@ -62,6 +57,11 @@
 									<a href="<?php echo $url ?>" target="_blank"><img src="<?php echo $image['sizes']['large'] ?>"></a>
 								</div>
 							<?php endwhile; ?>
+						</div>
+						<div class="projectBottom">
+							<?php while( has_sub_field('technical_components') ): ?>	
+								<h5>--<?php echo get_sub_field('technical_component'); ?>--</h5>
+							<?php endwhile; ?>	
 						</div>
 					</div>
 				<?php } ?>

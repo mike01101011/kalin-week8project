@@ -8,7 +8,7 @@
 			    		<p>Mike Kalin</p>
 			    	</div>
 			    	<div class="goToTop">
-			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
+			      		<a href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
 			    	</div>
 			    </div>
 			</div><!-- container -->
@@ -23,7 +23,7 @@
 						<a class ="" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 					</li>
 					<li>
-						<a class ="" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
+						<a class ="topNavListLink" href="https://www.linkedin.com/in/michaelkalin" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></i></a>
 					</li>
 					<li>
 						<a class ="" href="mailto:mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>

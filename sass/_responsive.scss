@@ -5,12 +5,87 @@
 	body {
 		background-color: green;
 	}
+	i.fa-chevron-down, i.fa-chevron-up {
+		display: none;
+	}
+
+// goToTop
+	.goToTop {
+		bottom: 20px;
+		right: 10px;
+		@include fontSize(16);
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+	.triangleBlue {
+		border-width: 470px 470px 0 0;
+	}
+	.triangleYellow {
+		border-width: 0 0 580px 580px;
+		right: 340px;
+	}
+// contact
+	textarea {
+		height: 150px;
+	}
+	div.contactLeft {
+		width: 66.66%;
+	}
+	div.contactRight {
+		width: 33.33%;
+	}
+// project
+	.project {
+		margin-bottom: 0px;
+		h3 {
+			@include fontSize(18);
+		}
+		p {
+			@include fontSize(15);
+		}
+	}
+	.projectTop h4 {
+			@include fontSize(16);
+		}
 }
 
 /* landscape phone / portrait tablet */
 @media all and (max-width: 768px) {
 	body {
 		background-color: purple;
+	}
+	.project {
+		align-items: center;
+	}
+	p {
+		@include fontSize(15);
+	}
+	.container .contactLeft {
+		width: 100%
+	}
+
+// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+	.triangleBlue {
+		border-width: 410px 410px 0 0;
+	}
+	.triangleYellow {
+		border-width: 0 0 520px 520px;
+	}
+	textarea {
+		height: 100px;
+	}
+	.goToTop {
+		bottom: 25px;
+		right: 10px;
+		@include fontSize(14);
+		a {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
 	}
 }
 
