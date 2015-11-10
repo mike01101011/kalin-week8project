@@ -154,15 +154,16 @@ p {
 	background-color: $colorFontLight;
 }
 i {
-	margin: 10px;
+	margin: 5px;
 }
 
-// siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav
+// siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav siteNav
 .siteList {
 	// border-top: 1px solid $colorFontDark;
 	// border-bottom: 1px solid $colorFontDark;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .siteList a {
@@ -254,7 +255,6 @@ footer {
 .projectsBorder, 
 .skillsBorder, 
 .contactBorder {
-	// min-height: 365px;
 	min-height: 180px;
 	position: relative;
 	z-index: -1;
@@ -280,12 +280,12 @@ footer {
 	.projectLeft {
 		width: 50%;
 		p {
-			margin-right: 50px;
-			margin-bottom: 20px;
+			margin-right: 10px;
 		}
 		h3 {
 			margin-top: 0;
 			margin-bottom: 20px;
+			margin-right: 10px;
 			color: $colorFontDark;
 			font-family: $fontTitle;
 			font-weight: 700;
@@ -305,14 +305,20 @@ footer {
 	}
 }
 .projectBottom {
-	// padding-top: 25px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	width: 100%;
-	h5 {
+	width: 77.77%;
+	margin: 0 0 0 auto;
+	p {
 		margin: 0 10px 20px 0;
+		font-weight: 700;
+		font-color: $colorFontDark;
+		@include fontSize(18);
+	}
+	p:last-child {
+		margin-right: 0px;
 	}
 }
 .projectLeftTop {
@@ -410,10 +416,8 @@ form{
 	input[type="submit"] {
 		color: $colorFontDark;
 	    border: 1px solid $colorFontDark;
-		width: 80px;
+		width: 60px;
 		text-align: center;
-		@include fontSize(21);
-		letter-spacing: 3px;
 		padding: 0 10px;
 		margin-bottom: 0;
 	}

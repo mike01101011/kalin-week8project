@@ -6,11 +6,11 @@
 	<section class="about" id="about">
 		<div class="container">
 			<h2>About</h2>
-				<p>-Front end web developer | Toronto, Ontario</p>
-				<p>-Terrible at self promotion | Adept at self deprecation</p>
-				<p>-Fluent in sarcasm | Versed in dry wit</p>
-				<p>-Lover of cheese pizza | Drinker of delicious beer</p>
-				<p>-Coffee crusader | Ice cream explorer | Taco aficionado</p>
+				<p>-Front end web developer</p><p>-Toronto, Ontario</p>
+				<p>-Terrible at self promotion</p><p>-Adept at self deprecation</p>
+				<p>-Fluent in sarcasm</p><p>-Versed in dry wit</p>
+				<p>-Lover of cheese pizza</p><p>-Drinker of delicious beer</p>
+				<p>-Coffee crusader</p><p>-Ice cream explorer</p><p>-Taco aficionado</p>
 				<p>-Equal parts super and duper</p>
 				<p>-References available upon request</p>
 		</div><!-- container -->
@@ -21,11 +21,11 @@
 	<section class="skills" id="skills">
 		<div class="container">
 			<h2>Skills</h2>
-			<p>-HTML5 | CSS3 | Sass</p>
-			<p>-JavaScript | jQuery | Angular | APIs</p>
-			<p>-Git | Github | Gulp</p>
-			<p>-WordPress | Sublime Text</p>
-			<p>-Accessibility | Responsive Design</p>
+			<p>-HTML5</p><p>-CSS3</p><p>-Sass</p>
+			<p>-JavaScript</p><p>-jQuery</p><p>-Angular</p><p>-APIs</p>
+			<p>-Git</p><p>-Github</p><p>-Gulp</p>
+			<p>-WordPress</p><p>-Sublime Text</p>
+			<p>-Accessibility</p><p>-Responsive Design</p>
 		</div><!-- container -->
 	</section><!-- skills -->
 
@@ -60,7 +60,7 @@
 						</div>
 						<div class="projectBottom">
 							<?php while( has_sub_field('technical_components') ): ?>	
-								<h5>--<?php echo get_sub_field('technical_component'); ?>--</h5>
+								<p>--<?php echo get_sub_field('technical_component'); ?>--</p>
 							<?php endwhile; ?>	
 						</div>
 					</div>

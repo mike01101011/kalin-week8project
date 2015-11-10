@@ -1,15 +1,17 @@
 // responsive responsive responsive responsive responsive responsive responsive responsive responsive responsive
 
-/* portrait tablet / small desktops */
+
+// small-desktop portrait-tablet small-desktop portrait-tablet small-desktop portrait-tablet
 @media all and (max-width: 940px) {
+// body
 	body {
-		background-color: green;
+		background-color: rgba(green,.1);
 	}
+// siteNav
 	i.fa-chevron-down, i.fa-chevron-up {
 		display: none;
 	}
-
-// goToTop
+// gotToTop
 	.goToTop {
 		bottom: 20px;
 		right: 10px;
@@ -20,7 +22,7 @@
 		}
 	}
 
-// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+// triangle
 	.triangleBlue {
 		border-width: 470px 470px 0 0;
 	}
@@ -40,23 +42,29 @@
 	}
 // project
 	.project {
-		margin-bottom: 0px;
 		h3 {
 			@include fontSize(18);
 		}
 		p {
-			@include fontSize(15);
+			@include fontSize(16);
 		}
 	}
 	.projectTop h4 {
+			@include fontSize(17);
+		}
+	div.projectBottom {
+		width: 99.99%;
+		p {
 			@include fontSize(16);
 		}
+	}
 }
 
-/* landscape phone / portrait tablet */
+// landscape phone-portrait tablet landscape phone-portrait tablet landscape phone-portrait tablet */
 @media all and (max-width: 768px) {
+// body
 	body {
-		background-color: purple;
+		background-color:  rgba(purple,.1);
 	}
 	.project {
 		align-items: center;
@@ -67,18 +75,18 @@
 	.container .contactLeft {
 		width: 100%
 	}
-
-// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+// triangle
 	.triangleBlue {
 		border-width: 410px 410px 0 0;
 	}
 	.triangleYellow {
 		border-width: 0 0 520px 520px;
 	}
+// contact
 	textarea {
 		height: 100px;
 	}
-// goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
+// goToTop
 	.goToTop {
 		bottom: 25px;
 		right: 10px;
@@ -88,17 +96,60 @@
 			padding-right: 5px;
 		}
 	}
+	.siteList li{
+		padding: 0;
+		.logo {
+			@include fontSize(24);
+		}
+		a {
+			@include fontSize(14);
+		}
+	}
+	.aboutBorder, 
+	.projectsBorder, 
+	.skillsBorder, 
+	.contactBorder {
+		min-height: 135px;
+	}
+// projects
+	.project {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		.projectLeft, .projectRight {
+			width: 100%;
+		}
+		.projectLeft p {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.projectBottom {
+			justify-content: flex-start;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+	}
 }
 
-/* landscape phone / portrait phone */
+// landscape-portrait phone landscape-portrait phone landscape-portrait phone landscape-portrait phone
 @media all and (max-width: 480px) {
+// body
 	body {
-		background-color: orange;
+		background-color:  rgba(orange,.1);
+		p {
+			@include fontSize(15);
+		}
 	}
-
+// navContactTop
 	.navContactTop {
 		justify-content: space-between;
 	}
+// header
+h1 {
+	@include fontSize(42);
+	// letter-spacing: 10px;	
+}
 	.hamburger {
 		display: block;
 	}
@@ -112,24 +163,34 @@
 	// 	left: 0;
 	// }
 
-	// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+// triangle
 	.triangleBlue {
-		border-width: 410px 410px 0 0;
+		border-width: 255px 255px 0 0;
 	}
 	.triangleYellow {
 		border-width: 0 0 370px 370px;
 	}
-// goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
+// goToTop
 	.goToTop {
-		bottom: 25px;
-		right: 2px;
+		bottom: 19px;
+		right: 4px;
 		@include fontSize(10);
 		letter-spacing: 0.25px;
 		a {
 			padding: 5px 2px;
 		}
 	}
+// bottomNavList
 	.bottomNavList {
 		justify-content: center;
+	}
+// form
+	form{
+		input[type="submit"], input[type="text"], input[type="email"], textarea {
+			@include fontSize(16);
+		}
+	}
+	div.projectBottom p {
+		@include fontSize(14);
 	}
 }
