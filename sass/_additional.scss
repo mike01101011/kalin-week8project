@@ -403,6 +403,7 @@ form{
 		@include fontSize(21);
 		letter-spacing: 3px;
 		padding: 0 10px;
+		margin-bottom: 0;
 	}
 	textarea {
 		resize: none;
@@ -419,11 +420,17 @@ form{
 		margin: 0;
 	}
 	.recaptcha div div{
-		margin-bottom: 10px;
+		margin-top: 10px;
+		margin-right: 0;
 		box-shadow: 5px 5px 5px rgba(128,128,128,.5);
-		width: 100%;
+		border: 1px solid $colorFontDark;
+		position: relative;
 		iframe {
-			border: 1px solid $colorFontDark;
+			display: flex;
+			background: none;
 		}
+	}
+	.ajax-loader {
+		height: 0;
 	}
 }

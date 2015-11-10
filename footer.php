@@ -7,6 +7,9 @@
 			    		<h2 class="logo">MK</h2>
 			    		<p>Mike Kalin</p>
 			    	</div>
+			    	<div class="credit">
+			    		<p>Created by Mike Kalin 2015</p>
+			    	</div>
 			    	<div class="goToTop">
 			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
 			    	</div>
@@ -15,7 +18,6 @@
 		</footer>
 		<nav class="navContact bottomNav">
 		 	<div class="container">
-		 		<p>Created by Mike Kalin 2015</p>
 			    <ul class="navContactList bottomNavList">
 			      <li>
 			        <a class ="" href="https://github.com/mike01101011" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
