@@ -185,7 +185,6 @@ i {
 footer {
 	color: $colorBackground;
 	background-color: $colorAccent2;
-	margin-top: 10px;
 	h2 {
 		color: $colorBackground;
 	}
@@ -199,10 +198,10 @@ footer {
 
 // goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
 .goToTop {
-	position:fixed;
-	bottom:15px;
-	right:25px;
-	display:none;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	display: none;
 	@include fontSize(18);
 	font-weight: 700;
 	a {
@@ -239,14 +238,17 @@ footer {
 }
 .projectsBorder {
 	background-color: $colorFontDark;
+	transform: skewY(-10deg);
+	margin: 50px 0 130px;
 }
 .skillsBorder {
 	background-color: $colorAccent3;
 	transform: skewY(-10deg);
-	margin-bottom: 130px;
+	margin: 50px 0 130px;
 }
 .contactBorder {
-	background-color: $colorAccent3;	
+	background-color: $colorAccent3;
+	margin: 50px 0 0;
 }
 .aboutBorder, 
 .projectsBorder, 
@@ -258,21 +260,31 @@ footer {
 	z-index: -1;
 	box-shadow: 5px 5px 5px rgba(128,128,128,.5);
 }
-.aboutBorder, .projectsBorder {
+.aboutBorder {
 	margin: 50px 0;
 }
 
 // project project project project project project project project project project project project
+.projectTop h4 {
+	color: $colorAccent2;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
 .project {
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
 	.projectLeft {
 		width: 50%;
-		h4 {
-			color: $colorAccent2;
-			font-weight: 700;
+		p {
+			margin-right: 50px;
+			margin-bottom: 20px;
 		}
 		h3 {
+			margin-top: 0;
+			margin-bottom: 20px;
 			color: $colorFontDark;
 			font-family: $fontTitle;
 			font-weight: 700;
@@ -289,6 +301,19 @@ footer {
 			box-shadow: 5px 5px 5px rgba(128,128,128,.5);
 		}
 	}
+}
+.projectBottom {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 90%;
+	h5 {
+		margin: 0 10px 20px;
+	}
+}
+.projectLeftTop {
+	margin-bottom: 25px;
 }
 
 // triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
@@ -371,7 +396,7 @@ form{
 		padding: 0 0 0 10px;
 	}
 	input[type="submit"] {
-		color: $colorFontLight;
+		color: $colorFontDark;
 	    border: 1px solid $colorFontDark;
 		width: 80px;
 		text-align: center;
@@ -392,5 +417,13 @@ form{
 		background-color: rgba($colorBackground, .5);
 		box-shadow: 5px 5px 5px rgba(128,128,128,.5);
 		margin: 0;
+	}
+	.recaptcha div div{
+		margin-bottom: 10px;
+		box-shadow: 5px 5px 5px rgba(128,128,128,.5);
+		width: 100%;
+		iframe {
+			border: 1px solid $colorFontDark;
+		}
 	}
 }

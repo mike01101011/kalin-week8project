@@ -40,18 +40,26 @@
 				<?php $counter = 0; ?>
 				<?php while ( $showPortfolio->have_posts() ) { $showPortfolio->the_post(); ?>
 					<?php $counter++; ?>
-
+					
+					<div class="projectTop">
+						<h4>0<?php echo $counter; ?></h4>
+					</div>
 					<div class="project">
 						<div class="projectLeft">
-							<h4>0<?php echo $counter; ?></h4>
-							<h3><?php the_title(); ?></h3>
+							<h3><?php echo get_field('short_description'); ?></h3>
 							<p><?php the_content(); ?></p>
+							<div class="projectBottom">
+								<?php while( has_sub_field('technical_components') ): ?>	
+									<h5>-<?php echo get_sub_field('technical_component'); ?>-</h5>
+								<?php endwhile; ?>	
+							</div>
 						</div>
 						<div class="projectRight">
 							<?php while( has_sub_field('images') ): ?>
 								<div class="image">
 									<?php $image = get_sub_field('image'); ?>
-									<img src="<?php echo $image['sizes']['square'] ?>">
+									<?php $url = get_sub_field('url'); ?>
+									<a href="<?php echo $url ?>" target="_blank"><img src="<?php echo $image['sizes']['large'] ?>"></a>
 								</div>
 							<?php endwhile; ?>
 						</div>
