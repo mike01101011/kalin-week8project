@@ -78,6 +78,7 @@
 	textarea {
 		height: 100px;
 	}
+// goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
 	.goToTop {
 		bottom: 25px;
 		right: 10px;
@@ -101,13 +102,34 @@
 	.hamburger {
 		display: block;
 	}
-	.modal {
-		width: 75vw;
-		height: 75vh;
-		position: abolute;
-		top: 100px;
-		right: 0;
-		bottom: 0;
-		left: 0;
+	// .modal {
+	// 	width: 75vw;
+	// 	height: 75vh;
+	// 	position: abolute;
+	// 	top: 100px;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// }
+
+	// triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle triangle
+	.triangleBlue {
+		border-width: 410px 410px 0 0;
+	}
+	.triangleYellow {
+		border-width: 0 0 370px 370px;
+	}
+// goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop goToTop
+	.goToTop {
+		bottom: 25px;
+		right: 2px;
+		@include fontSize(10);
+		letter-spacing: 0.25px;
+		a {
+			padding: 5px 2px;
+		}
+	}
+	.bottomNavList {
+		justify-content: center;
 	}
 }
