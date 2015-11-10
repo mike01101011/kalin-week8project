@@ -4,11 +4,8 @@
 			<div class="container">
 		    	<div class="footer">
 			    	<div class="logo">
-			    		<h2 class="logo">MK</h2>
+			    		<h2>MK</h2>
 			    		<p>Mike Kalin</p>
-			    	</div>
-			    	<div class="credit">
-			    		<p>Created by Mike Kalin 2015</p>
 			    	</div>
 			    	<div class="goToTop">
 			      		<a class ="" href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
@@ -18,20 +15,20 @@
 		</footer>
 		<nav class="navContact bottomNav">
 		 	<div class="container">
-			    <ul class="navContactList bottomNavList">
-			      <li>
-			        <a class ="" href="https://github.com/mike01101011" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-			      </li>
-			      <li>
-			        <a class ="" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-			      </li>
-			      <li>
-			        <a class ="" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
-			      </li>
-			      <li>
-			         <a class ="" href="mailto:mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>
-			      </li>
-			    </ul>
+				<ul class="navContactList bottomNavList">
+					<li>
+						<a class ="" href="https://github.com/mike01101011" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+					</li>
+					<li>
+						<a class ="" href="https://twitter.com/mikekalin_" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+					</li>
+					<li>
+						<a class ="" href="tel:+1-647-987-9279"><i class="fa fa-phone-square fa-2x"></i></a>
+					</li>
+					<li>
+						<a class ="" href="mailto:mailto:mike@mikekalin.ca"><i class="fa fa-envelope-square fa-2x"></i></a>
+					</li>
+				</ul>
 			</div><!-- container --> 
 		</nav><!-- navContact -->
 
