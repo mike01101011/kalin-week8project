@@ -8,7 +8,7 @@
 			    		<p>Mike Kalin</p>
 			    	</div>
 			    	<div class="goToTop">
-			      		<a href="#"><i class="fa fa-chevron-up"></i>Go To Top</a>
+			      		<a href="#">Go To Top</a>
 			    	</div>
 			    </div>
 			</div><!-- container -->

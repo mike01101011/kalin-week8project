@@ -26,6 +26,8 @@ html, html a {
 }
 
 html {
+	max-width: 1280px;
+	margin: 0 auto;
 	position: relative;
 	font-size: 62.5%;
 }
@@ -122,12 +124,13 @@ p {
 .topNavList li {
 	border-left: 1px solid $colorBorderDark;
 }
+
 .hamburger {
 	border-right: 1px solid $colorBorderDark;
 	a {
 		margin: 5px;
 	}
-	display: none;
+	visibility: hidden;
 }
 .bottomNav {
 		background-color: $colorAccent2;
@@ -181,6 +184,9 @@ i {
 		color: $colorFontDark;
 	}
 }
+.siteList li.dash {
+		display: none;
+}
 
 // footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
 footer {
@@ -201,7 +207,7 @@ footer {
 .goToTop {
 	position: fixed;
 	bottom: 15px;
-	right: 15px;
+	right: 10px;
 	display: none;
 	@include fontSize(18);
 	font-weight: 700;
@@ -212,11 +218,8 @@ footer {
 		transition: color 1s, background-color 1s, padding 1s;
 		border: 2px solid $colorFontDark;
 		border-radius: 5px;
-		padding: 10px 15px 10px 5px;
+		padding: 10px;
 		i {
-			// color: rgba(245, 243, 246, 0);
-			// margin: 0;
-			// padding: 0;
 			color: $colorFontDark;
 			transition: color 1s, margin 1s;
 		}
@@ -277,6 +280,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
+	border-bottom: 1px solid rgba($colorFontDark,.5);
 	.projectLeft {
 		width: 50%;
 		p {
@@ -303,6 +307,9 @@ footer {
 		}
 		margin-bottom: 25px;
 	}
+}
+.project:last-child {
+	border-bottom: none;
 }
 .projectBottom {
 	display: flex;

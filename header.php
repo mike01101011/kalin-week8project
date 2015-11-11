@@ -20,12 +20,10 @@
   </head>
 
   <body <?php body_class(); ?>>
-  <div class="modal"></div>
-
     <nav class="navContact navContactTop">
       <!-- <div class="container"> -->
         <div class="hamburger">
-          <a class ="hamburgerLink" href="" ><i class="fa fa-bars fa-2x"></i></a>
+          <a href="#openModal" class ="hamburgerLink" ><i class="fa fa-bars fa-2x"></i></a>
         </div>
         <ul class="navContactList topNavList">
           <li>
@@ -49,15 +47,18 @@
           <li>
             <a class="smoothScroll" href="#about"><i class="fa fa-chevron-down"></i>About</a>
           </li>
+          <li>-</li>
           <li>
             <a class="smoothScroll" href="#skills"><i class="fa fa-chevron-down"></i>Skills</a>
           </li>
+          <li class="dash">-</li>
           <li>
           <h2 class="logo"><i class="fa fa-chevron-down"></i>MK</h2>
           </li>
           <li>
             <a class="smoothScroll" href="#projects"><i class="fa fa-chevron-down"></i>Projects</a>
           </li>
+          <li>-</li>
           <li>
             <a class="smoothScroll" href="#contact"><i class="fa fa-chevron-down"></i>Contact</a>
           </li>
