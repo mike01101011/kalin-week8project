@@ -5,7 +5,7 @@
 @media all and (max-width: 940px) {
 // body
 	body {
-		background-color: rgba(green,.1);
+		// background-color: rgba(green,.5);
 	}
 // siteNav
 	i.fa-chevron-down, i.fa-chevron-up {
@@ -64,7 +64,7 @@
 @media all and (max-width: 768px) {
 // body
 	body {
-		background-color:  rgba(purple,.1);
+		// background-color:  rgba(purple,.5);
 	}
 	.project {
 		align-items: center;
@@ -137,7 +137,7 @@
 @media all and (max-width: 480px) {
 // body
 	body {
-		background-color:  rgba(orange,.1);
+		// background-color:  rgba(orange,.5);
 		p {
 			@include fontSize(15);
 		}
