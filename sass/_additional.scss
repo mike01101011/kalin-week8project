@@ -50,7 +50,7 @@ ul {
 }
 body {
 	font-family: $fontText;
-	@include fontSize(18);
+	@include fontSize(20);
 	letter-spacing: 0.5px;
 	color: $colorFontLight;
 	background-color: $colorBackground;
@@ -79,11 +79,11 @@ h4 {
 	text-shadow: 2px 2px 2px rgba(128,128,128,.5);
 }
 h1 {
-	@include fontSize(61);
+	@include fontSize(63);
 	letter-spacing: 10px;	
 }
 h2 {
-	@include fontSize(35);
+	@include fontSize(37);
 	letter-spacing: 7px;
 	i {
 		color: rgba($colorFontDark, 0);
@@ -91,11 +91,11 @@ h2 {
 	}
 }
 h3 {
-	@include fontSize(25);
+	@include fontSize(27);
 	letter-spacing: 4px;	
 }
 h4 {
-	@include fontSize(21);
+	@include fontSize(23);
 	letter-spacing: 3px;
 }
 a {
@@ -416,7 +416,7 @@ form{
 	input[type="submit"] {
 		color: $colorFontDark;
 	    border: 1px solid $colorFontDark;
-		width: 60px;
+		width: 80px;
 		text-align: center;
 		padding: 0 10px;
 		margin-bottom: 0;
