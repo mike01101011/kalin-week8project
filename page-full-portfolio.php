@@ -6,13 +6,10 @@
 	<section class="about" id="about">
 		<div class="container">
 			<h2>About</h2>
-				<p>-Front end web developer</p><p>-Toronto, Ontario</p>
-				<p>-Terrible at self promotion</p><p>-Adept at self deprecation</p>
-				<p>-Fluent in sarcasm</p><p>-Versed in dry wit</p>
-				<p>-Lover of cheese pizza</p><p>-Drinker of delicious beer</p>
-				<p>-Coffee crusader</p><p>-Ice cream explorer</p><p>-Taco aficionado</p>
-				<p>-Equal parts super and duper</p>
-				<p>-References available upon request</p>
+			<p>My name is Mike Kalin. I am a front-end developer based in Toronto.</p><br>
+			<p>I love mid century modern design, Seinfeld and yellow mustard. I drink generous amounts of coffee and apply hot sauce liberally.</p><br>
+			<p>I hold a love of learning, exploration and people. I combine these curiosities in my quest to be a great developer and a solid collaborator.</p><br>
+			<p>Please say hello at <a class="mail" href="mailto:mike@mikekalin.ca">mike@mikekalin.ca</a></p>
 		</div><!-- container -->
 	</section><!-- about -->
 
@@ -21,11 +18,12 @@
 	<section class="skills" id="skills">
 		<div class="container">
 			<h2>Skills</h2>
-			<p>-HTML5</p><p>-CSS3</p><p>-Sass</p>
-			<p>-JavaScript</p><p>-jQuery</p><p>-Angular</p><p>-APIs</p>
-			<p>-Git</p><p>-Github</p><p>-Gulp</p>
-			<p>-WordPress</p><p>-Sublime Text</p>
-			<p>-Accessibility</p><p>-Responsive Design</p>
+			<p>–	HTML5, CSS3, Sass</p>
+			<p>–	JavaScript, jQuery, Angular, PHP, SQL</p>
+			<p>–	Git, GitHub, Gulp, Command Line</p>
+			<p>–	Sublime Text, WordPress, APIs</p>
+			<p>–	Responsive Design, Accessibility</p>
+			<p>–	File Management, Programming Fundamentals</p>
 		</div><!-- container -->
 	</section><!-- skills -->
 

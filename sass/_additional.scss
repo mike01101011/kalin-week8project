@@ -454,3 +454,12 @@ form{
 		height: 0;
 	}
 }
+
+a.mail {
+    color: $colorAccent2;
+    text-transform: lowercase;
+    transition: color 500ms;
+    &:hover {
+    	color: $colorFontDark;
+    }
+}

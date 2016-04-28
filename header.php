@@ -47,18 +47,18 @@
           <li>
             <a class="smoothScroll" href="#about"><i class="fa fa-chevron-down"></i>About</a>
           </li>
-          <li>-</li>
+          <li>–</li>
           <li>
             <a class="smoothScroll" href="#skills"><i class="fa fa-chevron-down"></i>Skills</a>
           </li>
-          <li class="dash">-</li>
+          <li class="dash">–</li>
           <li>
           <h2 class="logo"><i class="fa fa-chevron-down"></i>MK</h2>
           </li>
           <li>
             <a class="smoothScroll" href="#projects"><i class="fa fa-chevron-down"></i>Projects</a>
           </li>
-          <li>-</li>
+          <li>–</li>
           <li>
             <a class="smoothScroll" href="#contact"><i class="fa fa-chevron-down"></i>Contact</a>
           </li>
